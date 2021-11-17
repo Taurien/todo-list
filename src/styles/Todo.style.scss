@@ -1,0 +1,48 @@
+@import '../styles/Responsive.scss';
+
+
+.single-todo {
+    //font-size: 1.5rem;
+    height: 8rem;
+    width: 100%;
+    
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(196, 196, 196);
+
+    @include media(pc) {
+        font-size: 1.4rem;
+        height: 11rem;
+    }
+    
+    span {
+        padding: 0.5rem 1rem;
+
+        @include media(pc) {
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    button {
+        border: none;
+        //padding: 0.8rem 0rem;
+        background-color: #EFEFEF;
+
+        @include media(pc) {
+            padding: 0.8rem 0rem;
+        }
+        
+        &:hover {
+            cursor: pointer;
+            background-color: #b1b1b1;
+        }
+    
+        &:active {
+            background-color: #696969;
+        }
+    }
+
+}
